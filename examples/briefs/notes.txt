@@ -1,0 +1,1 @@
+Make a mascot for my product: a small open-source notes app that keeps every note as a plain Markdown file on your own disk and syncs nothing to anyone's cloud. Users are writers and researchers who keep notes for years. It should feel quiet, patient, and trustworthy.

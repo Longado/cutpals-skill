@@ -1,0 +1,1 @@
+Make a mascot for my product. Glaze is a free macOS app: when you look away from your Mac, the screen frosts over like glazed glass, and when you look back it clears. It uses the camera entirely on-device and never records anything. Users are people who work in cafés, coworking spaces, and open offices. It should feel discreet, gentle, and a little playful.

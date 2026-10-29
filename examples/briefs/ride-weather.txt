@@ -1,0 +1,1 @@
+Make a mascot for my product: a weather app for people who commute by bike. Each morning it tells you the one window today when the roads are dry and the wind is at your back. It should feel brisk, cheerful, and dependable.

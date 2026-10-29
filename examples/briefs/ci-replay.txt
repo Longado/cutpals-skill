@@ -1,0 +1,1 @@
+Make a mascot for my product: an open-source command-line tool that replays a failed CI job on your own laptop, step by step, with the same environment, so you can debug it without pushing again. Users are backend and DevOps engineers. It should feel sharp, patient, and quietly clever.
