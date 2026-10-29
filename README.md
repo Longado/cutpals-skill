@@ -32,7 +32,7 @@ Your agent does the reading and the prompt writing; your agent's image model doe
 
 ![Cutpals showcase](assets/wall.webp)
 
-<sub>Browse and download them on the [gallery site](https://longado.github.io/cutpals-skill/). 18 picks from the 48 images generated for six product descriptions while the rules were being tuned. Not retouched.</sub>
+<sub>Browse and download them on the <a href="https://longado.github.io/cutpals-skill/">gallery site</a>. 18 picks from the 48 images generated for six product descriptions while the rules were being tuned. Not retouched.</sub>
 
 ## How it works
 
