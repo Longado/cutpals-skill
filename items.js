@@ -25,6 +25,11 @@ window.ITEMS = [
   "madeFor": "a local Markdown notes app"
  },
  {
+  "slug": "beaver-photo-backup-1",
+  "animal": "Beaver",
+  "madeFor": "a nightly photo backup app"
+ },
+ {
   "slug": "elephant-steamcup-1",
   "animal": "Elephant",
   "madeFor": "Steamcup, a keep-awake Mac app"
@@ -53,6 +58,11 @@ window.ITEMS = [
   "slug": "coffee-cup-steamcup-2",
   "animal": "Coffee cup",
   "madeFor": "Steamcup, a keep-awake Mac app"
+ },
+ {
+  "slug": "hedgehog-hedgehog-1",
+  "animal": "Hedgehog",
+  "madeFor": "a local Markdown notes app"
  },
  {
   "slug": "owl-steamcup-1",
@@ -88,6 +98,16 @@ window.ITEMS = [
   "slug": "rabbit-glaze-1",
   "animal": "Rabbit",
   "madeFor": "Glaze, a privacy screen app"
+ },
+ {
+  "slug": "hedgehog-photo-backup-1",
+  "animal": "Hedgehog",
+  "madeFor": "a nightly photo backup app"
+ },
+ {
+  "slug": "hedgehog-hedgehog-2",
+  "animal": "Hedgehog",
+  "madeFor": "a local Markdown notes app"
  },
  {
   "slug": "dog-bakery-1",
@@ -133,5 +153,15 @@ window.ITEMS = [
   "slug": "owl-steamcup-3",
   "animal": "Owl",
   "madeFor": "Steamcup, a keep-awake Mac app"
+ },
+ {
+  "slug": "beaver-photo-backup-2",
+  "animal": "Beaver",
+  "madeFor": "a nightly photo backup app"
+ },
+ {
+  "slug": "hedgehog-hedgehog-3",
+  "animal": "Hedgehog",
+  "madeFor": "a local Markdown notes app"
  }
 ];
