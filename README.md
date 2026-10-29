@@ -13,6 +13,7 @@
 
 <p align="center">
   <a href="README.zh-CN.md">中文</a> ·
+  <a href="https://longado.github.io/cutpals-skill/">Gallery</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="#build-with-us">Build with us</a>
 </p>
@@ -31,7 +32,7 @@ Your agent does the reading and the prompt writing; your agent's image model doe
 
 ![Cutpals showcase](assets/wall.webp)
 
-<sub>18 picks from the 48 images generated for six product descriptions while the rules were being tuned. Not retouched.</sub>
+<sub>Browse and download them on the [gallery site](https://longado.github.io/cutpals-skill/). 18 picks from the 48 images generated for six product descriptions while the rules were being tuned. Not retouched.</sub>
 
 ## How it works
 

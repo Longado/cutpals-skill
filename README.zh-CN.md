@@ -13,6 +13,7 @@
 
 <p align="center">
   <a href="README.md">English</a> ·
+  <a href="https://longado.github.io/cutpals-skill/">图库网站</a> ·
   <a href="#快速开始">快速开始</a> ·
   <a href="#一起做">一起做</a>
 </p>
@@ -31,7 +32,7 @@
 
 ![Cutpals 展示墙](assets/wall.webp)
 
-<sub>调规则期间为六个产品描述生成了 48 张，这里挑了 18 张，没有修图。</sub>
+<sub>可以在[图库网站](https://longado.github.io/cutpals-skill/)浏览和下载。调规则期间为六个产品描述生成了 48 张，这里挑了 18 张，没有修图。</sub>
 
 ## 它怎么做
 
