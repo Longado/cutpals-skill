@@ -13,6 +13,7 @@ Make the simplest lovable character that still reads at 32 × 32: one character 
 2. **Propose three directions**, one line each: `<subject> — <why it fits the product> — <defining feature>`.
    - Named subject: three treatments of that subject (defining feature, layer split, or personality).
    - Open subject: three different familiar animals by default, each tied to a different product trait. Use an object or unusual creature only when the product gives a direct reason. The animals named in this file only illustrate rules; choose from the product, not from these examples.
+   - Agents fall back on the same few animals: rabbits, dogs, elephants, owls. Pick one of them only when a specific trait of that animal matches the product, never just because it is cute and familiar, and use at most one of them per batch.
 
    Then propose six images. Wait for a yes unless the user has already authorized generation.
 3. **Assign palettes.** All three directions accepted → `A1 A2 B1 B2 C1 C2`: each direction gets two different palettes. At least four of the six sit on a deep background; the rest sit on a natural light paper. No background hue repeated. One direction chosen → `A1`–`A6`, six palettes. The user's own count or split overrides this.
@@ -25,7 +26,7 @@ Make the simplest lovable character that still reads at 32 × 32: one character 
 **Silhouette**
 - The head only (or the main mass of a headless subject, such as a cup or a cloud), front view. No body, paws, legs, or tail unless one of them is the defining feature.
 - Built from 3–4 paper layers, each one large rounded shape. A typical stack: a back layer that shows as a rim, the head, and the defining feature. Merge or drop any layer that does not carry identity.
-- Exactly one defining feature, big enough to name the species by itself: rabbit → long ears, elephant → trunk and big round ears, fox → wide pointed-but-blunt ears and a tapered muzzle, whale → spout and tail fluke. If the character could pass for a cat or a bear, the feature is wrong. When ears are not the feature, leave them out rather than adding small round ones that turn the face into a bear (a hedgehog stays earless).
+- Exactly one defining feature, big enough to name the species by itself: rabbit → long ears, elephant → trunk and big round ears, fox → wide pointed-but-blunt ears and a tapered muzzle, whale → spout and tail fluke, hedgehog → a long tapered snout with a round dark nose tip, set in front of a dome of rounded quill scallops (without the snout, a quill ring around a round face reads as a lion or a sunflower). If the character could pass for a cat or a bear, the feature is wrong. When ears are not the feature, leave them out rather than adding small round ones that turn the face into a bear (a hedgehog stays earless).
 - Face: two small dark paper dots for eyes, set wide apart and low. Add one tiny nose or small smile cut from the same dark paper, unless the defining feature (a trunk, a bill) already sits where the nose would be. No brows, eyelashes, cheeks, outlines, whiskers, or printed patterns.
 - Every edge a clean, smooth scissor cut with rounded ends. No thin strips, needle points, or narrow gaps: paper that thin would tear.
 - Test: as a black silhouette at 32 × 32 it is still recognizable. If a feature vanishes at that size, enlarge it, merge it, or delete it.

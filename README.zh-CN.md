@@ -28,7 +28,7 @@
 
 读产品、写提示词由你的 agent 来做，画图由它能调用的图像模型来做。除了这个 Markdown 文件，什么都不用装。
 
-> **早期版本。** 目前只在 Codex CLI 和它内置的出图工具上跑过：六个产品描述，四轮改规则，共 48 张图。Claude Code、Gemini 图像模型和其他 agent 还没试过。详见[已知问题](#已知问题)。
+> **早期版本。** 目前只在 Codex CLI 和它内置的出图工具上跑过：七个产品描述，五轮改规则，共 60 张图。Claude Code、Gemini 图像模型和其他 agent 还没试过。详见[已知问题](#已知问题)。
 
 ![Cutpals 展示墙](assets/wall.webp)
 
@@ -64,6 +64,7 @@
 | "…an open-source command-line tool that replays a failed CI job on your own laptop…" | 狐狸、大象、寻血猎犬 |
 | "Make a mascot for my business: a small neighborhood sourdough bakery…" | 小公鸡、小狗、兔子 |
 | "…a small open-source notes app that keeps every note as a plain Markdown file…" | 仓鸮、大象、刺猬 |
+| "…a small open-source app that copies every new photo from your phone to a drive in your own home each night…" | 猫头鹰、河狸、刺猬 |
 
 ## 快速开始
 
@@ -94,9 +95,9 @@ npx skills@latest add Longado/cutpals-skill --global   # 所有项目都能用
 
 ## 已知问题
 
-- **刺猬画不像刺猬。** 目前 6 张刺猬，看着都像狮子、向日葵或小熊。
-- **老是那几种动物。** 六个产品跑了 8 次，兔子、大象、狗各出现在其中 4 次。
-- **"脑袋变深色"的修正只验证了一轮。** 前三轮的提示词写的是 "the face is cut from dark paper"，图像模型有时会把整个脑袋涂成深色（第三轮的小公鸡和两只大象）。第四轮换成现在的写法后，12 个脑袋全是浅色或中间色，但样本只有这 12 张。
+- **有的动物要单独写规则。** `SKILL.md` 加刺猬那一条之前，6 张刺猬没一张像（像狮子、向日葵或小熊）；要求在刺前面画一根长鼻子之后，一轮 8 张全像了。别的动物可能也需要这样补。
+- **老是那几种动物。** 前 8 次运行里，兔子、大象、狗各出现了 4 次。现在规则限定这几种常见动物一批最多用一种；之后只跑了一次不指定动物的，选的是猫头鹰、河狸、刺猬。只有一次，证据还少。
+- **"脑袋变深色"已修正，但样本不大。** 前三轮的提示词写的是 "the face is cut from dark paper"，图像模型有时会把整个脑袋涂成深色（第三轮的小公鸡和两只大象）。第四、五轮换成现在的写法后，24 个脑袋全是浅色或中间色。
 - **只试过一个 agent、一个出图工具。** 目前所有图都来自 Codex CLI 内置的出图工具（输出 1254 × 1254）。其他 agent 和模型还没测。
 
 ## 一起做
@@ -106,7 +107,7 @@ npx skills@latest add Longado/cutpals-skill --global   # 所有项目都能用
 | 如果你…… | 可以…… |
 |---|---|
 | 在用 Gemini 或别的图像模型 | 跑一遍 `examples/briefs` 里的产品描述，把结果发上来 |
-| 遇到总画不好的动物（比如刺猬） | 在 `SKILL.md` 里补一条更好的"特征"写法 |
+| 遇到总画不好的动物 | 在 `SKILL.md` 里补一条更好的"特征"写法 |
 | 会做纸艺 | 告诉我们真实的叠纸有哪些地方规则还没写到 |
 | 想要别的画风 | fork 一份：画风基本都写在设计规则和提示词模板里 |
 

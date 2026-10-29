@@ -28,7 +28,7 @@ Ask an image model for a mascot and you usually get flat clip art or a shiny 3D 
 
 Your agent does the reading and the prompt writing; your agent's image model does the drawing. Nothing is installed besides the Markdown file.
 
-> **Early version.** So far it has been run only with Codex CLI and its built-in image tool, on six product descriptions, for 48 images across four rounds of rule changes. Claude Code, Gemini image models, and other agents have not been tried yet. See [Known issues](#known-issues).
+> **Early version.** So far it has been run only with Codex CLI and its built-in image tool, on seven product descriptions, for 60 images across five rounds of rule changes. Claude Code, Gemini image models, and other agents have not been tried yet. See [Known issues](#known-issues).
 
 ![Cutpals showcase](assets/wall.webp)
 
@@ -64,6 +64,7 @@ Each of these produced six images in our tests (the full texts are in [`examples
 | "…an open-source command-line tool that replays a failed CI job on your own laptop…" | a fox, an elephant, a bloodhound |
 | "Make a mascot for my business: a small neighborhood sourdough bakery…" | a rooster, a puppy, a rabbit |
 | "…a small open-source notes app that keeps every note as a plain Markdown file…" | a barn owl, an elephant, a hedgehog |
+| "…a small open-source app that copies every new photo from your phone to a drive in your own home each night…" | an owl, a beaver, a hedgehog |
 
 ## Quick start
 
@@ -94,9 +95,9 @@ Then just ask: *"Make a mascot for my product."*
 
 ## Known issues
 
-- **Hedgehogs don't read as hedgehogs.** All 6 hedgehog images so far came out looking like a lion, a sunflower, or a bear.
-- **The same animals keep coming back.** Over 8 runs on six products, rabbits, elephants, and dogs each showed up in 4 runs.
-- **The dark-head fix has one round behind it.** Rounds 1–3 used a prompt that said "the face is cut from dark paper", and the image model sometimes painted the whole head dark (a rooster and two elephants in round 3). Round 4 switched to the current wording and all 12 heads came out light or mid-tone, but that is 12 images.
+- **Some animals need their own rule.** Before the hedgehog line in `SKILL.md`, 0 of 6 hedgehogs looked like hedgehogs (they came out as lions, sunflowers, or bears). After it asked for a long snout in front of the quills, 8 of 8 did, in one round. Other species may need the same treatment.
+- **The same animals keep coming back.** Over the first 8 runs, rabbits, elephants, and dogs each showed up in 4. A rule now allows at most one of the usual picks per batch; the one open run since then chose an owl, a beaver, and a hedgehog. One run is not much evidence.
+- **Dark heads are fixed, on a small sample.** Rounds 1–3 used a prompt that said "the face is cut from dark paper", and the image model sometimes painted the whole head dark (a rooster and two elephants in round 3). Rounds 4–5 used the current wording and all 24 heads came out light or mid-tone.
 - **One agent, one image tool.** Every image so far came from Codex CLI's built-in image tool (1254 × 1254 output). Other agents and models are untested.
 
 ## Build with us
@@ -106,7 +107,7 @@ Then just ask: *"Make a mascot for my product."*
 | If you… | You could… |
 |---|---|
 | use Gemini or another image model | run the briefs in `examples/briefs` and share what comes back |
-| have an animal that keeps failing (hedgehogs, for one) | add a better "defining feature" line to `SKILL.md` |
+| have an animal that keeps failing | add a better "defining feature" line to `SKILL.md` |
 | make paper craft | tell us what real layered paper does that the rules miss |
 | want a different look | fork it: most of the style lives in the Design rules and the prompt template |
 

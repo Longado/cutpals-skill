@@ -1,0 +1,1 @@
+Make a mascot for my product: a small open-source app that copies every new photo from your phone to a drive in your own home each night, keeps them in folders by date, and never uploads anything to a cloud. Users are families who don't want to pay for cloud storage. It should feel steady, careful, and a little cozy.
