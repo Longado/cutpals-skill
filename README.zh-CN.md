@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue" alt="MIT"></a>
-  <img src="https://img.shields.io/badge/tested%20with-Codex%20CLI-black" alt="tested with Codex CLI">
+  <img src="https://img.shields.io/badge/tested%20with-Codex%20CLI%20%7C%20Antigravity-black" alt="tested with Codex CLI and Antigravity">
   <img src="https://img.shields.io/badge/format-Agent%20Skill-green" alt="Agent Skill">
   <img src="https://img.shields.io/badge/status-Alpha-orange" alt="Alpha">
 </p>
@@ -28,7 +28,7 @@
 
 读产品、写提示词由你的 agent 来做，画图由它能调用的图像模型来做。除了这个 Markdown 文件，什么都不用装。
 
-> **早期版本。** 目前只在 Codex CLI 和它内置的出图工具上跑过：七个产品描述，五轮改规则，共 60 张图。Claude Code、Gemini 图像模型和其他 agent 还没试过。详见[已知问题](#已知问题)。
+> **早期版本。** 规则是在 Codex CLI 和它内置的出图工具上调出来的：七个产品描述，五轮改规则，共 60 张图。之后在 Antigravity 命令行里用 Gemini 图像模型跑了一轮 10 张，画得没那么准。Claude Code 和其他 agent 还没试过。详见[已知问题](#已知问题)。
 
 ![Cutpals 展示墙](assets/wall.webp)
 
@@ -98,7 +98,7 @@ npx skills@latest add Longado/cutpals-skill --global   # 所有项目都能用
 - **有的动物要单独写规则。** `SKILL.md` 加刺猬那一条之前，6 张刺猬没一张像（像狮子、向日葵或小熊）；要求在刺前面画一根长鼻子之后，一轮 8 张全像了。别的动物可能也需要这样补。
 - **老是那几种动物。** 前 8 次运行里，兔子、大象、狗各出现了 4 次。现在规则限定这几种常见动物一批最多用一种；之后只跑了一次不指定动物的，选的是猫头鹰、河狸、刺猬。只有一次，证据还少。
 - **"脑袋变深色"已修正，但样本不大。** 前三轮的提示词写的是 "the face is cut from dark paper"，图像模型有时会把整个脑袋涂成深色（第三轮的小公鸡和两只大象）。第四、五轮换成现在的写法后，24 个脑袋全是浅色或中间色。
-- **只试过一个 agent、一个出图工具。** 目前所有图都来自 Codex CLI 内置的出图工具（输出 1254 × 1254）。其他 agent 和模型还没测。
+- **Gemini 画得没有 Codex 准。** 在 Antigravity 命令行里用 Gemini 3.1 Flash Image（输出 1024 × 1024）跑了一轮：咖啡杯和猫头鹰没问题；但用和 Codex 完全相同的提示词，两只河狸都像海象，两只刺猬有一只长出圆耳朵成了熊脸，一只猫头鹰长出尖耳朵，脑袋也比提示词要求的小。一共 10 张。图库里的图全部来自 Codex CLI 内置的出图工具（1254 × 1254）。Claude Code 和其他 agent 还没测。
 
 ## 一起做
 

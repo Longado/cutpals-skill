@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue" alt="MIT"></a>
-  <img src="https://img.shields.io/badge/tested%20with-Codex%20CLI-black" alt="tested with Codex CLI">
+  <img src="https://img.shields.io/badge/tested%20with-Codex%20CLI%20%7C%20Antigravity-black" alt="tested with Codex CLI and Antigravity">
   <img src="https://img.shields.io/badge/format-Agent%20Skill-green" alt="Agent Skill">
   <img src="https://img.shields.io/badge/status-Alpha-orange" alt="Alpha">
 </p>
@@ -28,7 +28,7 @@ Ask an image model for a mascot and you usually get flat clip art or a shiny 3D 
 
 Your agent does the reading and the prompt writing; your agent's image model does the drawing. Nothing is installed besides the Markdown file.
 
-> **Early version.** So far it has been run only with Codex CLI and its built-in image tool, on seven product descriptions, for 60 images across five rounds of rule changes. Claude Code, Gemini image models, and other agents have not been tried yet. See [Known issues](#known-issues).
+> **Early version.** It was tuned with Codex CLI and its built-in image tool: seven product descriptions, 60 images, five rounds of rule changes. One later round in Antigravity CLI with a Gemini image model gave 10 more, less precise. Claude Code and other agents have not been tried yet. See [Known issues](#known-issues).
 
 ![Cutpals showcase](assets/wall.webp)
 
@@ -98,7 +98,7 @@ Then just ask: *"Make a mascot for my product."*
 - **Some animals need their own rule.** Before the hedgehog line in `SKILL.md`, 0 of 6 hedgehogs looked like hedgehogs (they came out as lions, sunflowers, or bears). After it asked for a long snout in front of the quills, 8 of 8 did, in one round. Other species may need the same treatment.
 - **The same animals keep coming back.** Over the first 8 runs, rabbits, elephants, and dogs each showed up in 4. A rule now allows at most one of the usual picks per batch; the one open run since then chose an owl, a beaver, and a hedgehog. One run is not much evidence.
 - **Dark heads are fixed, on a small sample.** Rounds 1–3 used a prompt that said "the face is cut from dark paper", and the image model sometimes painted the whole head dark (a rooster and two elephants in round 3). Rounds 4–5 used the current wording and all 24 heads came out light or mid-tone.
-- **One agent, one image tool.** Every image so far came from Codex CLI's built-in image tool (1254 × 1254 output). Other agents and models are untested.
+- **Gemini draws less precisely than Codex.** One round in Antigravity CLI used Gemini 3.1 Flash Image (1024 × 1024 output). Coffee cups and owls came out fine. With prompts identical to an earlier Codex run, though, both beavers looked like walruses, one of two hedgehogs grew round ears and a bear face, one owl grew pointed ears, and the heads were smaller than the prompt asks for. That is 10 images. Everything in the gallery comes from Codex CLI's built-in image tool (1254 × 1254). Claude Code and other agents are untested.
 
 ## Build with us
 
